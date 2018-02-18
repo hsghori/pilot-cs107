@@ -1,6 +1,15 @@
 import java.util.Random;
-public class LoopExamples {
 
+/**
+ * Demonstrates basic loop concepts in Java.
+ * @author Haroon Ghori
+ */
+public class LoopExamples {
+   
+   /**
+    * Main method.
+    * @param args Command line arguments 
+    */
    public static void main(String[] args) {
       // a for loop is used to loop over a specific range
       // of values
