@@ -4,14 +4,20 @@
  * @author Haroon Ghori
  */
 public class ScopeExamples {
+
+   static int outOfMain = 1000;
    
    public static void main(String[] args) {
+      System.out.printf("outOfMain is visible and = %d.\n", outOfMain);
       int outerVar = 1;
       if (true) {
          System.out.printf("outerVar is visible and = %d.\n", outerVar);
+         System.out.printf("outOfMain is visible and = %d.\n", outOfMain);
          outerVar = 10;
+         outOfMain /= 10;
       }
       System.out.printf("now outerVar = %d.\n", outerVar);
+      System.out.printf("now outOfmain = %d.\n", outOfMain);
       if (outerVar > 0) {
          int inIfVar = 2;
          System.out.printf("inIfVar is visible and = %d.\n", inIfVar);
