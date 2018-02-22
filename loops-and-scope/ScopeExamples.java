@@ -31,13 +31,13 @@ public class ScopeExamples {
          System.out.print("*");
       }
       System.out.println();
-      //System.out.printf("Is i in scope? i = %d", i);
+      System.out.printf("Is i in scope? i = %d", i);
       int j;
       for (j = 0; j < 10; j++) {
          System.out.print("+");
       }
       System.out.println();
-      //System.out.printf("Is j in scope? j = %d", j);
+      System.out.printf("Is j in scope? j = %d", j);
   }
 
 }

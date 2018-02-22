@@ -36,7 +36,7 @@ public class LoopExamples {
       // a do while loop is like a while loop, but 
       // the body is evaluated before checking the condition
       System.out.println("\nWhile loop - continues until di rolls a 3.");
-      int rollTwo = 0;
+      int rollTwo = 3;
       do {
          System.out.printf("%d ", rollTwo);
          rollTwo = gen.nextInt(6) + 1;
@@ -80,12 +80,13 @@ public class LoopExamples {
       }
       System.out.println("Nested for and while loop.\nContinues until average roll is less than 3.");
       double avgRoll = 6;
+      final int numRolls = 10;
       while (avgRoll >= 3) {
          int acumRoll = 0;
-         for (int i = 0; i < 10; i++) {
+         for (int i = 0; i < numRolls; i++) {
             acumRoll += gen.nextInt(6) + 1;
          }
-         avgRoll = acumRoll / 10.0;
+         avgRoll = acumRoll / (float) numRolls;
          System.out.printf("%.2f ", avgRoll);
       }    
    }
