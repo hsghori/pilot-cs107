@@ -63,7 +63,7 @@ the loop will run.
 ### Do-While Loops
 
 A do-while loop is almost exactly like a while loop except the loop body
-is executed before the condition is checke. This means that the body
+is executed before the condition is checked. This means that the body
 will always be executed at least once.
 ```Java
 System.out.println("Welcome to my do-while example");
@@ -77,7 +77,7 @@ The loop above will continue until the user inputs the string "q". Note that we 
 In general we use a while loop when we don't know exactly how many times
 the loop will run but we always want the loop to run at least once. 
 
-### Loop Equivaalence
+### Loop Equivalence
 
 For and do-whlie loops are, theoretically, convenient syntax for a
 special case of a while loop. That means that any for or do-while loop
