@@ -1,6 +1,6 @@
-\maketitle
-Random Numbers
---------------
+#Notes: Control Flow and Random Numbers
+
+##Random Numbers
 
 Sometimes we may want to generate a random number as part of our program
 (we could be writing a board game that uses a dice, simulating a
@@ -39,7 +39,7 @@ L (inclusive) and H (exclusive).
 The complete list of random number generation methods can be found at
 <https://docs.oracle.com/javase/7/docs/api/java/util/Random.html>.
 
-### Example
+##Example
 
 The following program takes two doubles as inputs (high and low) and
 prints two random numbers - the first is a random integer between high
@@ -69,11 +69,9 @@ public class RandomExample {
 }
 ```
 
-Control Flow
-============
+##Control Flow
 
-Boolean Statements
-------------------
+###Boolean Statements
 
 Boolean is one of the primitive data types in Java. A boolean variable
 can take on two values, true or false and can be created using
@@ -149,8 +147,7 @@ bool z = x && y; // false
 bool z = x || y; // true
 ```
 
-If, Else If, and Else
----------------------
+###If, Else If, and Else
 
 If/Else if/Else blocks are used to execute specific lines of code based
 on a set of conditions. There are several ways to use these blocks.\
@@ -217,8 +214,7 @@ else {
 }
 ```
 
-Switch
-------
+###Switch
 
 A switch statements is used when we want to perform a specific action if
 a primitive variable or String is equal to a specific value. Instead of
