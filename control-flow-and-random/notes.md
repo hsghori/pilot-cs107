@@ -1,6 +1,6 @@
-#Notes: Control Flow and Random Numbers
+# Notes: Control Flow and Random Numbers
 
-##Random Numbers
+## Random Numbers
 
 Sometimes we may want to generate a random number as part of our program
 (we could be writing a board game that uses a dice, simulating a
@@ -9,37 +9,31 @@ module designed to handle random number generation.\
 To use this module we must import the Random class and declare a new
 Random object - keep in mind you only need to declare one random object
 even if you want to generate multiple random variables. If we have
-`Random randy = new Random();`
+`Random gen = new Random();`
 
--   `randy.nextInt();`\
+-   `gen.nextInt();`\
     Returns a random integer.
-
--   `randy.nextInt(x);`\
+-   `gen.nextInt(x);`\
     Returns a random integer between 0 and x (not including x).
-
--   `randy.nextDouble();`\
+-   `gen.nextDouble();`\
     Returns a random double between 0 and 1.
-
--   `randy.nextBoolean();`\
+-   `gen.nextBoolean();`\
     Returns a random boolean value (true or false).
-
--   `randy.nextGaussian();`\
+-   `gen.nextGaussian();`\
     Returns a random double from the Gaussian (Normal) distribution with
     mean 0 and standard deviation 1.
 
 We can use these methods to generate random integers and floats between
 L (inclusive) and H (exclusive).
-
 -   `randy.nextInt(H-L+1) + L`\
     Returns a random integer between L and H (inclusive).
-
 -   `randy.nextDouble()*(H-L) + L`\
     Returns a random double between L and H (inclusive).
 
 The complete list of random number generation methods can be found at
 <https://docs.oracle.com/javase/7/docs/api/java/util/Random.html>.
 
-##Example
+## Example
 
 The following program takes two doubles as inputs (high and low) and
 prints two random numbers - the first is a random integer between high
@@ -79,26 +73,17 @@ combinations of relational statements and boolean variables chained
 together by logical operators.
 
 **Relational Operators**
-
--   $<$ less than
-
--   $>$ greater than
-
--   $<=$ less than or equal to
-
--   $>=$ greater than or equal to
-
--   $==$ check for equality
-
--   $!=$ not equal
+- < less tha
+- > greater than
+- <= less than or equal to
+- >= greater than or equal to
+- == check for equality
+- != not equal
 
 **Logical Operators**
-
--   && and
-
--   $||$ or
-
--   ! not
+- && and
+- $||$ or
+- ! not
 
 A && B is true if and only if, A and B both evaluate to true. Otherwise
 A && B is false.
@@ -147,7 +132,7 @@ bool z = x && y; // false
 bool z = x || y; // true
 ```
 
-###If, Else If, and Else
+### If, Else If, and Else
 
 If/Else if/Else blocks are used to execute specific lines of code based
 on a set of conditions. There are several ways to use these blocks.\
@@ -214,7 +199,7 @@ else {
 }
 ```
 
-###Switch
+### Switch
 
 A switch statements is used when we want to perform a specific action if
 a primitive variable or String is equal to a specific value. Instead of
