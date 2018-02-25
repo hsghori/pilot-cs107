@@ -56,7 +56,7 @@ public class RandomExample {
         // note that (int) high casts the double variable "high" to an integer
         int randInt = gen.nextInt((int) high - (int) low + 1) + (int) low;
         double randDouble = gen.nextDouble() * (high-low) + low;
-        System.out.printf("A random number between %f and %f is %d\n", low, high, randInt);
+        System.out.printf("A random number between %d and %d is %d\n", (int)low, (int)high, randInt);
         System.out.printf("A random double between %f and %f is %f\n", low, high, randDouble);
     }
     
