@@ -25,9 +25,9 @@ even if you want to generate multiple random variables. If we have
 
 We can use these methods to generate random integers and floats between
 L (inclusive) and H (exclusive).
--   `randy.nextInt(H-L+1) + L`\
+-   `gen.nextInt(H-L+1) + L`\
     Returns a random integer between L and H (inclusive).
--   `randy.nextDouble()*(H-L) + L`\
+-   `gen.nextDouble()*(H-L) + L`\
     Returns a random double between L and H (inclusive).
 
 The complete list of random number generation methods can be found at
@@ -74,54 +74,42 @@ together by logical operators.
 
 **Relational Operators**
 - < less tha
-- > greater than
-- <= less than or equal to
+- \> greater than
+- \<= less than or equal to
 - >= greater than or equal to
 - == check for equality
 - != not equal
 
 **Logical Operators**
 - && and
-- $||$ or
+- || or
 - ! not
 
-A && B is true if and only if, A and B both evaluate to true. Otherwise
+A && B is true if A and B both evaluate to true. Otherwise
 A && B is false.
 
-A $||$ B is true if and only if, either A or B or both A and B are true.
-Otherwise A $||$ B is false.
+A || B is true if either A or B or both A and B are true.
+Otherwise A || B is false.
 
-!A is true if and only if A is false. Otherwise !A is false.
+!A is true if A is false. Otherwise !A is false.
 
-These statements can be summarized by the following tables
+```
+AND
+True  &&  True  = True 
+True  &&  False = False 
+False &&  True  = False 
+False &&  False = False  
 
-**AND**
+OR
+True  ||  True  = True 
+True  ||  False = True 
+False ||  True  = True 
+False ||  False = False  
 
-  ------- ------- --------
-     A       B     A && B
-   false   false   false
-   true    false   false
-   false   true    false
-   true    true     true
-  ------- ------- --------
-
-**OR**
-
-  ------- ------- ----------
-     A       B     A $||$ B
-   false   false    false
-   true    false     true
-   false   true      true
-   true    true      true
-  ------- ------- ----------
-
-**NOT**
-
-  ------- -------
-     A      !A
-   false   true
-   true    false
-  ------- -------
+NOT
+!True           = False 
+!False          = True
+```
 
 For example
 
@@ -130,6 +118,12 @@ bool x = 5 < 10; // true
 bool y = 5 > 10; // false
 bool z = x && y; // false
 bool z = x || y; // true
+```
+
+The not (!) operator can be distributed using De Morgan's Laws:
+```
+!(A && B) = !A || !B 
+!(A || B) = !A && !B 
 ```
 
 ### If, Else If, and Else
