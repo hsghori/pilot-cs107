@@ -109,7 +109,7 @@ while (rollFour != 3) {
 }
 ```
 
-### #Nested Loops
+### Nested Loops
 
 Loops can be nested within each other to create some complex (and very
 useful) results.
