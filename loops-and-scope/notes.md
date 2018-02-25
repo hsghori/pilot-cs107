@@ -1,13 +1,13 @@
-#Notes: Loops and Variable Scope
+# Notes: Loops and Variable Scope
 
-##Loops
+## Loops
 
 One of the major benefits of a computer is its ability to quickly
 complete repetitive tasks. Programming languages like Java have built in
 structures called loops which we can use to condense repetitive
 statements.
 
-###For Loops
+### For Loops
 
 For loops are the most straight forward and intuitive type of loop. A
 for loop is defined in three stages:
@@ -43,7 +43,7 @@ Outputs:
 We typically use a for loop when we know exactly how many times a loop
 should run or we know the exact range over which we need to loop. 
 
-###While Loops
+### While Loops
 
 The while loop is the most general type of loop. A while loop keeps
 executing the loop body so long as a boolean condition is satisfied.
@@ -60,7 +60,7 @@ In this example, `gen.nextInt(6) + 1` simulates rolling a 6 sided di. The while 
 In general we use a while loop when we don't know exactly how many times
 the loop will run.
 
-###Do-While Loops
+### Do-While Loops
 
 A do-while loop is almost exactly like a while loop except the loop body
 is executed before the condition is checke. This means that the body
@@ -77,7 +77,7 @@ The loop above will continue until the user inputs the string "q". Note that we 
 In general we use a while loop when we don't know exactly how many times
 the loop will run but we always want the loop to run at least once. 
 
-###Loop Equivaalence
+### Loop Equivaalence
 
 For and do-whlie loops are, theoretically, convenient syntax for a
 special case of a while loop. That means that any for or do-while loop
@@ -109,7 +109,7 @@ while (rollFour != 3) {
 }
 ```
 
-####Nested Loops
+### #Nested Loops
 
 Loops can be nested within each other to create some complex (and very
 useful) results.
@@ -134,7 +134,7 @@ while (avgRoll >= 3) {
 }    
 ```
 
-##Scope
+## Scope
 
 When a varble is **declared** in Java it is given a certain **scope**. A
 variables scope is the region in which it is visible (or accessible). A
