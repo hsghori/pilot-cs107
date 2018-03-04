@@ -1,5 +1,4 @@
-Input and Output, External Files
-================================
+# Notes: File IO
 
 We often want to read data from a file and / or write data to a file. To
 read data from a file we use the Scanner and FileReader classes. We
