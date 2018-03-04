@@ -73,7 +73,7 @@ import java.util.Scanner;
 // More generally,
 // import <provider>.<package>.<Classname>;
 
-public class Review {
+public class Fa2017MidtermOne {
     
     public static void main(String[] args) {
      
