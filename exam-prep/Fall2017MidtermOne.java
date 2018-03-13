@@ -77,7 +77,7 @@ public class Fa2017MidtermOne {
     
     public static void main(String[] args) {
      
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = {1, 2, 3, 4, 5}; // don't worry about what this is
         
         System.out.println(arr); // {1, 2, 3, 4, 5} ???
         // No, just prints out some kind of junk
@@ -269,7 +269,7 @@ public class Fa2017MidtermOne {
         
         // Converting a number to a string
         String s = l + ""; // but who wants to do this REALLY
-        s = Integer.toString(l); // that's more like it
+        s = Integer.toString( l ); // that's more like it
         
         
         
