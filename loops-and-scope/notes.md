@@ -113,7 +113,7 @@ while (rollFour != 3) {
 
 Loops can be nested within each other to create some complex (and very
 useful) results.
-```Jsva
+```Java
 System.out.println("\nNested for loop.\nPrints a triangle.");
 for (int i = 0; i < 10; i++) {
     for (int j = 0; j < i; j++) {
