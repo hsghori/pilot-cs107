@@ -17,7 +17,7 @@ for loop is defined in three stages:
 3.  assignment: define how var changes for each iteration of the loop.
 
 This is best seen illustrated by an example.
-```
+```Java
 for (int i = 0; i < 10; i++) {
     System.out.print(i + " ");
 }
