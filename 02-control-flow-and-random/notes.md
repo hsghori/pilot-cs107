@@ -59,13 +59,13 @@ public class RandomExample {
         System.out.printf("A random number between %d and %d is %d\n", (int)low, (int)high, randInt);
         System.out.printf("A random double between %f and %f is %f\n", low, high, randDouble);
     }
-    
+
 }
 ```
 
-##Control Flow
+## Control Flow
 
-###Boolean Statements
+### Boolean Statements
 
 Boolean is one of the primitive data types in Java. A boolean variable
 can take on two values, true or false and can be created using
@@ -95,19 +95,19 @@ Otherwise A || B is false.
 
 ```
 AND
-True  &&  True  = True 
-True  &&  False = False 
-False &&  True  = False 
-False &&  False = False  
+True  &&  True  = True
+True  &&  False = False
+False &&  True  = False
+False &&  False = False
 
 OR
-True  ||  True  = True 
-True  ||  False = True 
-False ||  True  = True 
-False ||  False = False  
+True  ||  True  = True
+True  ||  False = True
+False ||  True  = True
+False ||  False = False
 
 NOT
-!True           = False 
+!True           = False
 !False          = True
 ```
 
@@ -122,8 +122,8 @@ bool z = x || y; // true
 
 The not (!) operator can be distributed using De Morgan's Laws:
 ```
-!(A && B) = !A || !B 
-!(A || B) = !A && !B 
+!(A && B) = !A || !B
+!(A || B) = !A && !B
 ```
 
 ### If, Else If, and Else
@@ -215,13 +215,13 @@ We can write:
 
 ```Java
 switch (x) {
-    case value1: 
+    case value1:
         // statements
         break;
-    case value2: 
+    case value2:
         // statements
         break;
-    default: 
+    default:
         // statements
         break;
 }
@@ -229,20 +229,20 @@ switch (x) {
 
 Nore that the default case corresponds to the \"else\" block in an if /
 else if / else structure. The `break` keyword breaks out of the switch
-strucure. If you don't end a case with a `break`, the program will
-simply move on through to the next case. This behaviour gives us a bit
+structure. If you don't end a case with a `break`, the program will
+simply move on through to the next case. This behavior gives us a bit
 more flexibility than if/else if statements when it comes to \"or\"
-behaviours. If you want to have an \"or\" type statements with mutliple
+behaviors. If you want to have an \"or\" type statements with multiple
 variables (ie if x == X or x == Y) we can exclude the break statement
 and let the cases merge.
 
 ```Java
 switch (x) {
-    case value1: 
-    case value2: 
+    case value1:
+    case value2:
         // statements
         break;
-    default: 
+    default:
         // statements
         break;
 }
@@ -274,7 +274,7 @@ switch (choice) {
     case 'b':
         // do B
     case 'a':
-        // do A 
+        // do A
         break;
     default:
         // do C
@@ -288,10 +288,10 @@ if (x == 'a') {
     // do A
 }
 else if (x == 'b')
-    // do A 
+    // do A
     // do B
 }
-eles {
+else {
     // do C
 }
 ```
